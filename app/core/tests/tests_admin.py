@@ -7,7 +7,7 @@ class TestAdmin(TestCase):
 
     def setUp(self):
         self.client = Client()
-        self.admin = get_user_model().objects.create_super_user(
+        self.admin = get_user_model().objects.create_superuser(
             email='admin@gmail.com',
             password='Pass1234'
         )
